@@ -8,11 +8,18 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-#header {}
+#main {
+    background-image: url('images/mob-bg.png');
+    /* background-size: contain; */
+    background-repeat: repeat-x;
+    /* height: auto; */
+    background-position: center top;
+    background-size: 100%;
+}
 
 .navbar {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     height: 80px;
     align-items: center;
 }
@@ -30,12 +37,6 @@ body {
 }
 
 .main {
-    background-image: url('images/mob-bg.png');
-    background-repeat: no-repeat;
-    background-size: auto;
-    height: auto;
-    background-position: center top;
-    background-size: 100%;
     padding: 1.5em;
     width: 100%;
     margin-bottom: 16px;
@@ -47,38 +48,456 @@ body {
     font-weight: 700;
     line-height: 1.5rem;
     margin: 2rem 0;
+    text-align: center;
+}
+
+.main h3 {
+    font-size: 24px;
+    font-weight: 800;
 }
 
 .main h1 {
     font-family: sans-serif;
     color: #e4250f;
-    font-size: 3em;
+    font-size: 3.4em;
     font-weight: 800;
     margin-bottom: 24px;
     line-height: 1em;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .main-footer {
     margin-top: 60px;
     text-align: center;
-
+    margin-bottom: 40px;
 }
 
-.main p {
+
+.main-para {
     line-height: 150%;
     font-size: 13px;
     color: rgb(51, 51, 51);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 12px;
+    border: solid #d3d3d3 4px;
+
+}
+
+.main-footer {
+    line-height: 150%;
+    font-size: 13px;
+    color: rgb(51, 51, 51);
+    text-align: center;
 }
 
 #program {
     background-image: url('images/mobile-main_bg.png');
     height: 500px;
+    /* width: 100%; */
     background-color: rgb(39, 42, 50);
+    padding: 24px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 120px;
+}
+
+#program h2 {
+    text-align: center;
+}
+
+.line {
+    border-bottom: #e4250f solid 2px;
+    width: 3rem;
+    margin: 8px auto 24px auto;
+}
+
+.program-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.list1 {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    align-items: center;
+}
+
+.list2 {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    align-items: center;
+}
+
+.list3 {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    align-items: center;
+}
+
+.list4 {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    align-items: center;
+}
+
+.list5 {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.program-list h4 {
+    color: #ef513c;
+    padding: 24px;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    width: 132px;
+}
+
+.program-list p {
+    font-size: 12px;
+}
+
+.join-link {
+    width: 80%;
+    /* margin: 0 auto; */
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #ef513c;
+    padding: 24px 48px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 48px;
+}
+
+#speakers {
+    margin-top: 48px;
+}
+
+.speakers {
+    margin-top: 62px;
+}
+
+#speakers h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.speaker1 {
+    display: flex;
+    margin-left: 12px;
+}
+
+.chessboard {
+    width: 80px;
+    display: inline;
+}
+
+.speaker-img {
+    position: relative;
+    top: -80px;
+    margin-right: 12px;
+}
+
+.speaker-detail h2 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.speaker-detail h4 {
+    color: #ef513c;
+    font-size: 14px;
+    margin-bottom: 32px;
+    margin-top: 18px;
+}
+
+.speaker-detail p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 12px;
+}
+
+.more {
+    border: 2px solid gray;
+    width: 90%;
+    margin: 0 5% 62px 5%;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.menu {
+    list-style-type: none;
+    background-color: #272a31;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.menu.active {
+    left: 0;
+    opacity: 0.95;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 22px;
+    position: relative;
+    top: -10px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu li {
+    border-bottom: 1px solid rgba(211, 211, 211, 0.4);
+    margin-bottom: 20px;
+    padding: 8px 0;
+}
+
+.close {
+    text-align: right;
+    margin-right: 48px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.hidden-mobile {
+    display: none;
+}
+
+.hidden-desktop {
+    display: inline-block;
+}
+
+.scroll-lock {
+    overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
     .hamburger {
         display: none;
     }
+
+    .hidden-mobile {
+        display: inline-block;
+    }
+
+    .hidden-desktop {
+        display: none;
+    }
+
+    .heading ul {
+        display: flex;
+        width: 100%;
+        list-style: none;
+        margin-right: 160px;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .heading li {
+        margin-left: 24px;
+        font-size: 14px;
+    }
+
+    .heading ul a {
+        text-decoration: none;
+        color: #fff
+    }
+
+    .heading {
+        background-color: #333;
+        display: flex;
+        height: 40px;
+    }
+
+    .container {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+
+    .menu {
+        list-style: none;
+        background-color: #fff;
+        height: 48px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+        opacity: 1;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        font-weight: 800;
+        position: static;
+        margin: 0;
+    }
+
+    .logo {
+        border: 2px #333 solid;
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu li {
+        margin-left: 70px;
+        display: flex;
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .menu a:hover {
+        color: #e4250f;
+        text-decoration: none;
+    }
+
+    .menu li:last-child {
+        border: #ef513c solid 6px;
+        padding: 12px;
+    }
+
+    .main {
+        text-align: center;
+    }
+
+    .main h1 {
+        font-family: sans-serif;
+        color: #e4250f;
+        font-size: 3.4em;
+        font-weight: 800;
+        margin-bottom: 24px;
+        line-height: 1em;
+        letter-spacing: 2px;
+        text-align: left;
+        width: 65%;
+        padding: 0 6px;
+    }
+
+    .main-para {
+        text-align: left;
+        width: 50%;
+        background-color: #fff;
+        border: #fff;
+    }
+
+    .main h2 {
+        text-align: left;
+    }
+
+    .main-footer {
+        text-align: left;
+    }
+
+    .main-footer h3 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .main-footer p {
+        margin-top: 12px;
+    }
+
+    .program-list {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px 200px;
+        grid-template-rows: 220px;
+        gap: 4px;
+        margin: 10px auto;
+    }
+
+    .program-list div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+
+    }
+
+    .program-list div:hover {
+        border: 4px solid #d3d3d3;
+    }
+
+    #program {
+        padding-top: 40px;
+    }
+
+    #program a {
+        color: #d3d3d3;
+        width: auto;
+        margin: 48px auto;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .list5 {
+        margin-bottom: 0;
+    }
+
+    .program-list h4 {
+        font-size: 20px;
+        padding: 4px;
+    }
+
+    .program-list p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .speaker1 {
+        display: flex;
+        margin-left: 12px;
+    }
+
+    .speakers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #partners {
+        background-color: #272a31;
+        width: 100%;
+        height: 40vh;
+        margin-top: 32px;
+        margin-bottom: 48px;
+        padding-top: 48px;
+    }
+
+    #partners h3 {
+        width: 140px;
+        margin: 0 auto;
+        color: #d3d3d3;
+        font-size: 24px;
+    }
+
 }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/93af04f6a5.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
@@ -13,34 +14,202 @@
 </head>
 
 <body>
-    <header id="header">
-        <nav class="navbar">
+    <header class="">
+
+        <div class="heading hidden-mobile">
+            <ul>
+                <li> <a href=""><i class="fa-brands fa-facebook-f"></i></a> </li>
+                <li> <a href=""><i class="fa-brands fa-twitter"></i></a> </li>
+                <li> <a href=""> English</a></li>
+                <li> <a href="">My Page</a></li>
+                <li> <a href="">Logout</a></li>
+            </ul>
+        </div>
+        <nav class="navbar container">
             <div class="hamburger">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
+            <img class="logo hidden-mobile" src="" alt="">
+            <ul class="menu">
+                <li class="close"><img src="images/close_mobile_menu.png" alt=""></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="">Progress</a></li>
+                <li><a href="">Join</a></li>
+                <li><a href="">S*-ponsor</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">cc Campaign</a></li>
+            </ul>
         </nav>
-
-        <main class="main">
-            <h2>"Hello, Sharing world!"</h2>
-            <h1>CREATIVE COMMONS GLOBAL SUMMIT 2015</h1>
-            <P>A fun festival where people from more than 80 countries who believe in the value of sharing and openness
-                and create positive change gather and sharetheir thoughts will be held in Korea in October
-            </P>
-            <div class="main-footer">
-                <h3>2015.10.14 (Wed) ~ 17 (Sat)</h3>
-                <p>@ National Museum of Korea, Art Center Nabi, etc.</p>
-            </div>
-        </main>
     </header>
 
+
+    <main class="main container" id="main">
+        <h2>"Hello, Sharing world!"</h2>
+        <h1>CREATIVE COMMONS GLOBAL SUMMIT 2015</h1>
+        <P class="main-para">A fun festival where people from more than 80 countries who believe in the
+            value of
+            sharing and openness
+            and create positive change gather and sharetheir thoughts will be held in Korea in October
+        </P>
+
+        <div class="main-footer">
+            <h3>2015.10.14 (Wed) ~ 17 (Sat)</h3>
+            <p>@ National Museum of Korea, Art Center Nabi, etc.</p>
+        </div>
+    </main>
+
     <section id="program">
+        <h2>Main Program</h2>
+        <div class="line"></div>
+        <div class="program-list">
+            <div class="list1">
+                <img src="images/conference.png" alt="">
+                <h4>conference</h4>
+                <p>Listen to lectures from speakers from around the world and learn about the latest trends in the
+                    world.</p>
+            </div>
+
+            <div class="list2">
+                <img src="images/Exhibition.png" alt="">
+                <h4>CC exhibition</h4>
+                <p>Let's meet the creations of artists from various fields who share the open spirit of CC.</p>
+            </div>
+
+            <div class="list3">
+                <img src="images/forum.png" alt="">
+                <h4>forum</h4>
+                <p>We have time to share our thoughts and opinions with experts by topic.</p>
+            </div>
+
+            <div class="list4">
+                <img src="images/workshop.png" alt="">
+                <h4>workshop</h4>
+                <p>You can create your own creations using open source instead of just looking at them.</p>
+            </div>
+
+            <div class="list5">
+                <img src="images/party.png" alt="">
+                <h4>CC party</h4>
+                <p>Create opportunities to freely network with CC personnel from around the world.</p>
+            </div>
+        </div>
+        <a class="hidden-mobile" href="">SEE THE WHOLE PROGRAM</a>
+    </section>
+    <div class="join">
+        <a class="join-link hidden-desktop" href="">join CC GlobalSummit 2022</a>
+    </div>
+
+
+    <section id="speakers">
+        <!-- <div>  create this div in JavaScript-->
+        <h3>Featured speakers</h3>
+        <div class="line"></div>
+        <div class="speakers container">
+            <div class="speaker1">
+                <div>
+                    <img class="chessboard" src="images/chess-board.png" alt="">
+                    <img class="speaker-img" src="images/speaker_01.png" alt="">
+                </div>
+                <div class="speaker-detail">
+                    <h2>Yochai Bendlder</h2>
+                    <h4> <i>Professor at Harvard Law School</i></h4>
+                    <p>Focusing on a collaborative approach in a networked environment, he created the concept
+                        ofco-production based on sharing, such as open source software and Wikipedia. <br> (Main books:
+                        The
+                        Wealth of the Network , Penguin and Leviathan )</p>
+                </div>
+            </div>
+            <div class="speaker1">
+                <div>
+                    <img class="chessboard" src="images/chess-board.png" alt="">
+                    <img class="speaker-img" src="images/speaker_03.png" alt="">
+                </div>
+                <div class="speaker-detail">
+                    <h2>SohYeong Noh</h2>
+                    <h4> <i>Director of art Center Nabi and a board member CC Korea</i></h4>
+                    <p>Focusing on a collaborative approach in a networked environment, he created the concept
+                        ofco-production based on sharing, such as open source software and Wikipedia. <br> (Main books:
+                        The
+                        Wealth of the Network , Penguin and Leviathan )</p>
+                </div>
+            </div>
+
+            <div class="speaker1 hidden-mobile">
+                <div>
+                    <img class="chessboard" src="images/chess-board.png" alt="">
+                    <img class="speaker-img" src="images/speaker_02.png" alt="">
+                </div>
+                <div class="speaker-detail">
+                    <h2>SohYeong Noh</h2>
+                    <h4> <i>Director of art Center Nabi and a board member CC Korea</i></h4>
+                    <p>Focusing on a collaborative approach in a networked environment, he created the concept
+                        ofco-production based on sharing, such as open source software and Wikipedia. <br> (Main books:
+                        The
+                        Wealth of the Network , Penguin and Leviathan )</p>
+                </div>
+            </div>
+
+            <div class="speaker1 hidden-mobile">
+                <div>
+                    <img class="chessboard" src="images/chess-board.png" alt="">
+                    <img class="speaker-img" src="images/speaker_04.png" alt="">
+                </div>
+                <div class="speaker-detail">
+                    <h2>SohYeong Noh</h2>
+                    <h4> <i>Director of art Center Nabi and a board member CC Korea</i></h4>
+                    <p>Focusing on a collaborative approach in a networked environment, he created the concept
+                        ofco-production based on sharing, such as open source software and Wikipedia. <br> (Main books:
+                        The
+                        Wealth of the Network , Penguin and Leviathan )</p>
+                </div>
+            </div>
+
+            <div class="speaker1 hidden-mobile">
+                <div>
+                    <img class="chessboard" src="images/chess-board.png" alt="">
+                    <img class="speaker-img" src="images/speaker_05.png" alt="">
+                </div>
+                <div class="speaker-detail">
+                    <h2>SohYeong Noh</h2>
+                    <h4> <i>Director of art Center Nabi and a board member CC Korea</i></h4>
+                    <p>Focusing on a collaborative approach in a networked environment, he created the concept
+                        ofco-production based on sharing, such as open source software and Wikipedia. <br> (Main books:
+                        The
+                        Wealth of the Network , Penguin and Leviathan )</p>
+                </div>
+            </div>
+
+            <div class="speaker1 hidden-mobile">
+                <div>
+                    <img class="chessboard" src="images/chess-board.png" alt="">
+                    <img class="speaker-img" src="images/speaker_06.png" alt="">
+                </div>
+                <div class="speaker-detail">
+                    <h2>SohYeong Noh</h2>
+                    <h4> <i>Director of art Center Nabi and a board member CC Korea</i></h4>
+                    <p>Focusing on a collaborative approach in a networked environment, he created the concept
+                        ofco-production based on sharing, such as open source software and Wikipedia. <br> (Main books:
+                        The
+                        Wealth of the Network , Penguin and Leviathan )</p>
+                </div>
+            </div>
+
+            <div class="more hidden-desktop">MORE</div>
+        </div>
+
+        <!-- </div> -->
 
     </section>
 
+    <section id="partners" class="hidden-mobile">
+        <h3>Partners</h3>
+        <div class="container">
+            <img src="images/google-logo-removebg-preview.png" alt="">
+        </div>
 
-
+    </section>
 
     <script src="index.js"></script>
 </body>
