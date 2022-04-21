@@ -11,7 +11,7 @@ body {
 
 #header {
     background-image: url('images/mob-bg.png');
-    /* background-repeat: repeat-x; */
+    background-repeat: repeat-x;
     background-size: contain;
     height: auto;
     background-position: center top;
@@ -112,7 +112,9 @@ p>span {
     width: 90%;
     margin: 48px auto 48px auto;
     height: 200px;
-    background-color: gray;
+    border: solid 2px #d3d3d3;
+    border-radius: 5px;
+    /* background-color: gray; */
 }
 
 .line {
@@ -180,6 +182,7 @@ p>span {
     left: -100%;
     opacity: 0;
     transition: 0.5s;
+
 }
 
 .menu.active {
@@ -222,6 +225,7 @@ p>span {
 .mid-section h2 {
     font-size: 30px;
     font-weight: 700;
+    margin: 0 20%;
 }
 
 .mid-section p {
@@ -255,12 +259,16 @@ p>span {
         display: none;
     }
 
+    #header {
+        background-image: none;
+    }
+
     .heading ul {
         display: flex;
         width: 100%;
         justify-content: end;
         list-style: none;
-        margin-right: 140px;
+        margin-right: 5%;
         align-items: center;
     }
 
@@ -282,7 +290,7 @@ p>span {
 
     .navbar {
         display: flex;
-        justify-content: start;
+        justify-content: space-between;
         height: 80px;
         align-items: center;
         margin-left: 140px;
@@ -297,13 +305,14 @@ p>span {
         list-style: none;
         background-color: #fff;
         height: 48px;
-        width: auto;
+        width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
         position: static;
         justify-content: end;
         opacity: 1;
+        margin-right: 5%;
     }
 
     .menu a {
@@ -316,13 +325,16 @@ p>span {
     }
 
     .logo {
-        border: 2px #333 solid;
-        width: 50px;
-        height: 50px;
+        width: 50%;
+        margin: 48px auto 48px auto;
+        height: 200px;
+        border: solid 2px #d3d3d3;
+        border-radius: 5px;
+        /* background-color: gray; */
     }
 
     .menu li {
-        margin-right: 60px;
+        margin-left: 6%;
         display: flex;
         border-bottom: 0;
         margin-bottom: 0;
@@ -337,7 +349,16 @@ p>span {
     .menu li:last-child {
         border: #ef513c solid 6px;
         padding: 12px;
-        margin-right: 140px;
+    }
+
+    .main {
+        background-image: url('images/mob-bg.png');
+        /* background-repeat: no-repeat; */
+        background-repeat: repeat-x;
+        background-size: contain;
+        height: auto;
+        background-position: center top;
+        background-size: 100%;
     }
 
     .main h1 {
@@ -345,14 +366,44 @@ p>span {
         color: #e4250f;
         font-size: 3.4em;
         font-weight: 800;
-        margin-bottom: 24px;
+        margin: 0 auto 24px auto;
         line-height: 1em;
         letter-spacing: 2px;
-        text-align: left;
+        text-align: center;
         width: 65%;
     }
 
     .main-para {
         width: 70%;
+    }
+
+    .mid-section h2 {
+        font-size: 30px;
+        font-weight: 700;
+        padding: 0;
+    }
+
+    .mid-section {
+        margin-right: 42px;
+        margin-left: 42px;
+    }
+
+    .past {
+        border-top: solid #d3d3d3 1px;
+        padding-top: 42px;
+    }
+
+    .past-img {
+        display: flex;
+        justify-content: left;
+        margin: 0;
+    }
+
+    .past-img img {
+        width: 30%;
+    }
+
+    .past-img1 {
+        margin-left: 30;
     }
 }
