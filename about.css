@@ -6,7 +6,7 @@
 
 body {
     color: #333;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 #header {
@@ -111,10 +111,23 @@ p>span {
 .logo {
     width: 90%;
     margin: 48px auto 48px auto;
-    height: 200px;
     border: solid 2px #d3d3d3;
     border-radius: 5px;
-    /* background-color: gray; */
+}
+
+.logo h2 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.logo ul {
+    list-style-position: inside;
+    text-align: left;
+}
+
+.logo li {
+    margin-left: 24px;
+    line-height: 24px;
 }
 
 .line {
@@ -123,22 +136,39 @@ p>span {
     margin: 8px auto 24px auto;
 }
 
-.past-img1,
-.past-img2 {
+.past-img {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    /* height: 300px; */
+    margin-left: 25%;
+    gap: 48px;
+}
+
+/* .past-img img {
     display: block;
-    width: 60%;
-    height: 300px;
-    margin: 32px auto 32px auto;
-    /* filter: grayscale(100%); */
-    filter: sepia(90%)
+    position: static;
+} */
+
+.mozilla {
+    position: relative;
+    bottom: 4rem;
+    left: 35%;
+    /* background-color: red; */
 }
 
-.past-img1:hover {
-    filter: none;
+.google {
+    position: relative;
+    left: -25%;
+    top: 25%;
 }
 
-.past-img2:hover {
-    filter: none;
+.aess {
+    position: relative;
+    bottom: -1rem;
+    width: 30%;
+    right: -3rem;
 }
 
 .past h2 {
@@ -157,10 +187,10 @@ p>span {
 
 #footer {
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
     background-color: #333;
-    margin-top: 48px;
-    margin-bottom: 48px;
+    margin-top: 72px;
+    /* margin-bottom: 48px; */
     padding-top: 24px;
 }
 
@@ -169,6 +199,12 @@ p>span {
     color: #fff;
     text-align: center;
 }
+
+/* .footer-img img {
+    position: relative;
+    top: -32px;
+    width: 45%;
+} */
 
 .menu {
     list-style-type: none;
@@ -241,6 +277,24 @@ p>span {
 
 .scroll-lock {
     overflow: hidden;
+}
+
+.footer-note {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    margin-right: 24px;
+    gap: 12px;
+}
+
+.footer-note p {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.footer-note img {
+    width: 50%;
 }
 
 
@@ -325,12 +379,22 @@ p>span {
     }
 
     .logo {
-        width: 50%;
+        width: 80%;
         margin: 48px auto 48px auto;
-        height: 200px;
         border: solid 2px #d3d3d3;
         border-radius: 5px;
-        /* background-color: gray; */
+        text-align: left;
+        line-height: 30px;
+        padding: 14px;
+        padding-top: 32px;
+    }
+
+    .logo h2 {
+        text-align: center;
+    }
+
+    .logo ul {
+        list-style-position: inside;
     }
 
     .menu li {
@@ -353,7 +417,6 @@ p>span {
 
     .main {
         background-image: url('images/mob-bg.png');
-        /* background-repeat: no-repeat; */
         background-repeat: repeat-x;
         background-size: contain;
         height: auto;
@@ -395,15 +458,42 @@ p>span {
 
     .past-img {
         display: flex;
-        justify-content: left;
-        margin: 0;
+        justify-content: center;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        gap: 48px;
+        /* margin: 0; */
     }
 
-    .past-img img {
-        width: 30%;
-    }
+
 
     .past-img1 {
         margin-left: 30;
+    }
+
+    #footer {
+        margin-top: 600px;
+    }
+
+    .footer-note {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 150px;
+        gap: 48px;
+        background-color: #272a31;
+        margin: 48px 0 0 0;
+    }
+
+    .footer-note p {
+        text-align: left;
+        font-size: 14px;
+        margin-top: 20px;
+        color: #d3d3d3;
+    }
+
+    .footer-note img {
+        width: 300px;
+        margin-left: 20%;
     }
 }

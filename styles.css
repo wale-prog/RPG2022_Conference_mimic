@@ -10,9 +10,7 @@ body {
 
 #main {
     background-image: url('images/mob-bg.png');
-    /* background-size: contain; */
     background-repeat: repeat-x;
-    /* height: auto; */
     background-position: center top;
     background-size: 100%;
 }
@@ -155,9 +153,9 @@ body {
     color: #ef513c;
     padding: 24px;
     align-items: center;
-    text-align: center;
+    text-align: left;
     font-size: 14px;
-    width: 132px;
+    width: 30%;
 }
 
 .program-list p {
@@ -195,12 +193,15 @@ body {
 
 .speaker1 {
     display: flex;
-    margin-left: 12px;
+    margin-left: 48px;
 }
 
 .chessboard {
     width: 80px;
     display: inline;
+    position: relative;
+    left: -16px;
+    top: -4px;
 }
 
 .speaker-img {
@@ -298,6 +299,11 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+
+    body {
+        background-color: #d3d3d3;
+    }
+
     .hamburger {
         display: none;
     }
@@ -427,13 +433,13 @@ body {
     }
 
     .main-footer p {
-        margin-top: 12px;
+        margin-top: 24px;
     }
 
     .program-list {
         display: grid;
         grid-template-columns: 18% 18% 18% 18% 18%;
-        grid-template-rows: 210px;
+        grid-template-rows: 230px;
         gap: 4px;
         margin: 10px 12.5% 10px 18%;
     }
@@ -470,6 +476,8 @@ body {
     .program-list h4 {
         font-size: 20px;
         padding: 4px;
+        text-align: center;
+        width: 100%;
     }
 
     .program-list p {
@@ -492,10 +500,10 @@ body {
     #partners {
         background-color: #272a31;
         width: 100%;
-        height: 40vh;
+        height: 30vh;
         margin-top: 32px;
         margin-bottom: 48px;
-        padding-top: 48px;
+        padding-top: 36px;
     }
 
     #partners h3 {
@@ -509,13 +517,60 @@ body {
         position: relative;
         top: -80px;
         margin-right: 12px;
-        height: auto;
-        width: 100%;
+        /* height: auto;
+        width: 100%; */
     }
 
     .header {
-        /* margin: 0;
-        padding: 0; */
+        background-color: #fff;
+    }
+
+    .chessboard {
+        width: 50%;
+        display: inline;
+        position: relative;
+        left: -16px;
+        top: -4px;
+    }
+
+    .footer-note {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 30vh;
+        gap: 48px;
+    }
+
+    .footer-note p {
+        text-align: left;
+        font-size: 14px;
+        margin-top: 20px;
+        /* color: #d3d3d3; */
+    }
+
+    .footer-note img {
+        width: 300px;
+        margin-left: 20%;
+    }
+
+    .aess {
+        position: relative;
+        bottom: -1rem;
+        width: 15%;
+        left: 20rem;
+    }
+
+    .mozilla {
+        position: relative;
+        bottom: 1rem;
+        left: 40%;
+        /* background-color: red; */
+    }
+
+    .google {
+        position: relative;
+        /* left: -25%; */
+        top: 25%;
     }
 
 }
