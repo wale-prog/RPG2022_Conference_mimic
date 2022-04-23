@@ -1,62 +1,60 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Module one Capstone Project
 
-# Project Name
+> Project Description.
 
-> Description the project.
+> In this Capstone project, we were given  a design guide line to follow which was based on an art summit but I have personalized it i.e changed the content to that of a technical conference advocating for Renewable Power Generation that has zero net carbon emission. 
+> The webpage is responsive and compatible with screen sizes lower than 768px, then higher screen sizes.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- JavaScript
+- Git & Github
 
-## Live Demo (if available)
+## Live Demo
+[Live Demo Link](https://wale-prog.github.io/Module1-Capstone-Project/)
 
-[Live Demo Link](https://livedemo.com)
+## Video Walkthrough link
+[Video Walkthrough](https://www.loom.com/share/c7cc1d5084a94fc09bd21805d46c6f11)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**This project is part of a training series to highlight the need for proper documentation, best practices, and writing clean codes with html, css and Javascript.**
 
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- Have an IDE installed on your computer to be able to view the code locally.
+- Have a good working knowledge of Git and Github.
 
 ### Setup
+- Open a command line terminal (Git bash preferrably) and navigate to a directory where you would like to save the work folder using cd.
+- Clone the repository with git clone https://github.com/wale-prog/Module1-Capstone-Project.git
+- To get the cuurent working tree, git fetch --all, then checkout to capstone-html/css branch.
+- Finally, display the content of the index.html by running a live server or by just opening the file using a web browser.
 
 ### Install
+- IDE preferrably VScode
 
 ### Usage
-
-### Run tests
-
-### Deployment
+- For any individual who wishes to practice basic HTML,CSS and Javascript
+- For practice of HTML5, CSS and Jvascript technologies.
 
 
+## Author
 
-## Authors
+👤 **Wale Olapetan**
 
-👤 **Author1**
+- GitHub: [@wale-prog](https://github.com/wale-prog)
+- Twitter: [@Wale_Petan](https://twitter.com/Wale_Petan)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
-
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+
 
 ## Show your support
 
@@ -64,10 +62,11 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Hat tip to [Cindy Shin in Behance](https://www.behance.net/adagio07) for the original design and guidelines.
+- Shoutout to [@ijeomaodinko](https://github.com/ijeomaodinko) for being amazing.
+- Microverse.
 
 ## 📝 License
+
 
 This project is [MIT](./MIT.md) licensed.
