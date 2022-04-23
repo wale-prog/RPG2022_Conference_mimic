@@ -10,9 +10,9 @@ body {
 
 .for-bg {
   background-image: url('images/mob-bg.png');
-  background-repeat: repeat-x;
+  background-repeat: repeat-y;
   background-position: center top;
-  background-size: 100%;
+  background-size: contain;
 }
 
 #main {
@@ -93,7 +93,8 @@ body {
 
 #program {
   background-image: url('images/mobile-main_bg.png');
-  height: 500px;
+
+  /* height: 500px; */
   background-color: rgb(39, 42, 50);
   padding: 24px;
   color: #fff;
@@ -121,6 +122,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.drop {
+  color: #ef513c;
+  letter-spacing: 24px;
+  position: relative;
+  top: -2px;
+  background-color: #fff;
 }
 
 .list1 {
@@ -152,6 +161,10 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
   margin-bottom: 48px;
+}
+
+.speakers div {
+  margin-bottom: 24px;
 }
 
 .program-list h4 {
@@ -239,6 +252,7 @@ body {
   font-size: 20px;
   letter-spacing: 0.5px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .menu {
@@ -454,6 +468,7 @@ body {
     flex-direction: column;
     padding: 10px;
     width: 100%;
+    margin: 0;
   }
 
   .program-list div:hover {

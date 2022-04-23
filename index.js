@@ -82,7 +82,7 @@ featuredSpeaker.forEach((data) => {
           </div>
       </div>  
 
-      <div class="speaker1 hidden-mobile">
+      <div class="speaker1 speaker-hide hidden-mobile">
           <div>
             <img class="chessboard" src="${data.chessboard}" alt="">
             <img class="speaker-img" src="${data.speaker3img}" alt="">
@@ -94,7 +94,7 @@ featuredSpeaker.forEach((data) => {
           </div>
       </div>  
 
-      <div class="speaker1 hidden-mobile">
+      <div class="speaker1 speaker-hide hidden-mobile">
           <div>
             <img class="chessboard" src="${data.chessboard}" alt="">
             <img class="speaker-img" src="${data.speaker4img}" alt="">
@@ -106,7 +106,7 @@ featuredSpeaker.forEach((data) => {
           </div>
       </div>  
 
-      <div class="speaker1 hidden-mobile">
+      <div class="speaker1 speaker-hide hidden-mobile">
           <div>
             <img class="chessboard" src="${data.chessboard}" alt="">
             <img class="speaker-img" src="${data.speaker5img}" alt="">
@@ -118,7 +118,7 @@ featuredSpeaker.forEach((data) => {
           </div>
       </div>  
 
-      <div class="speaker1 hidden-mobile">
+      <div class="speaker1 speaker-hide hidden-mobile">
           <div>
             <img class="chessboard" src="${data.chessboard}" alt="">
             <img class="speaker-img" src="${data.speaker6img}" alt="">
@@ -135,4 +135,18 @@ featuredSpeaker.forEach((data) => {
     `;
 
   speakers.appendChild(speakerSection);
+});
+
+const more = document.querySelector('.more');
+const speakerHide = document.querySelectorAll('.speaker-hide');
+
+more.addEventListener('click', () => {
+  for (let i = 0; i < speakerHide.length; i += 1) {
+    speakerHide[i].classList.toggle('hidden-mobile');
+    if (!speakerHide[2].classList.contains('hidden-mobile')) {
+      more.innerHTML = 'SHOW LESS';
+    } else {
+      more.innerHTML = 'MORE';
+    }
+  }
 });
