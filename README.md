@@ -2,8 +2,8 @@
 
 > Project Description.
 
-> In this Capstone project, we were given  a design guide line to follow which was based on an art conference but I have personalized it i.e changed the content to that of a technical conference advocating for Renewable Power Generation that has zero net carbon emission. 
-> The webpage is responsive and compartible with screen sizes lower than 768px, then higher screen sizes.
+> In this Capstone project, we were given  a design guide line to follow which was based on an art summit but I have personalized it i.e changed the content to that of a technical conference advocating for Renewable Power Generation that has zero net carbon emission. 
+> The webpage is responsive and compatible with screen sizes lower than 768px, then higher screen sizes.
 
 
 ## Built With
@@ -16,10 +16,13 @@
 ## Live Demo
 [Live Demo Link](https://wale-prog.github.io/Module1-Capstone-Project/)
 
+## Video Walkthrough link
+[Video Walkthrough](https://www.loom.com/share/c7cc1d5084a94fc09bd21805d46c6f11)
+
 
 ## Getting Started
 
-**This project is part of a training series to highlight the need for proper documentation, best practices, and building clean codes with html, css and Javascript.**
+**This project is part of a training series to highlight the need for proper documentation, best practices, and writing clean codes with html, css and Javascript.**
 
 
 ### Prerequisites
