@@ -2,9 +2,7 @@
 
 > Project Description.
 
-> In this Capstone project, we were given  a design guide line to follow which was based on an art summit but I have personalized it i.e changed the content to that of a technical conference advocating for Renewable Power Generation that has zero net carbon emission. 
-> The webpage is responsive and compatible with screen sizes lower than 768px, then higher screen sizes.
-
+> RPG 2022 is a conference landing and about pages advocating for Renewable Power Generation with zero net carbon emission. The webpage is responsive and compatible with screen sizes lower than 768px, then higher screen sizes.
 
 ## Built With
 
