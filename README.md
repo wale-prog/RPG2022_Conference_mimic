@@ -12,7 +12,7 @@
 - Git & Github
 
 ## Live Demo
-[Live Demo Link](https://wale-prog.github.io/Module1-Capstone-Project/)
+[Live Demo Link](https://wale-prog.github.io/RPG2022_Conference_mimic/)
 
 ## Video Walkthrough link
 [Video Walkthrough](https://www.loom.com/share/c7cc1d5084a94fc09bd21805d46c6f11)
